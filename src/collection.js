@@ -70,7 +70,7 @@ module.exports = class Collection extends EventEmitter {
 
     this.list.set(index, item);
     this.emit('added-item', item);
-    return true;
+    return item;
   }
 
   remove(index) {
