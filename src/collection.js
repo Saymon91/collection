@@ -32,6 +32,7 @@ module.exports = class Collection extends EventEmitter {
           this.add(index, data[index]));
         break;
     }
+    return this;
   }
 
   add(...args) {
